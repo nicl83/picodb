@@ -1,0 +1,27 @@
+{
+    "lumaupdate": {
+        "developer": "kunoichiz",
+        "repository": "lumaupdate",
+        "type": "github"
+    },
+    "ctrQuake": {
+        "developer": "masterfeizz",
+        "repository": "ctrQuake",
+        "type": "github"
+    },
+    "FBI": {
+        "developer": "Steveice10",
+        "repository": "FBI",
+        "type": "github"
+    },
+    "Checkpoint": {
+        "developer": "FlagBrew",
+        "repository": "Checkpoint",
+        "type": "github"
+    },
+    "Cthulhu": {
+        "developer": "Ryuzaki-MrL",
+        "repository": "Cthulhu",
+        "type": "github"
+    }
+}

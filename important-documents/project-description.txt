@@ -1,0 +1,2 @@
+An attempt at making a tinyDB-type website with next to no resources, save for caching QR codes.
+

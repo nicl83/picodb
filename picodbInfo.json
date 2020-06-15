@@ -1,0 +1,312 @@
+{
+    "Checkpoint": {
+        "description": "Fast and simple homebrew save manager for 3DS and Switch.",
+        "latestQR": "qrCodes/Checkpoint/Checkpoint-v3.7.4.png",
+        "latestURL": "https://github.com/FlagBrew/Checkpoint/releases/download/v3.7.4/Checkpoint.cia",
+        "latestVersion": "v3.7.4",
+        "oldVersions": {
+            "v1.0.0": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v1.0.0.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v1.0.0/Checkpoint.cia",
+                "version": "v1.0.0"
+            },
+            "v2.0.0": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v2.0.0.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v2.0.0/Checkpoint.cia",
+                "version": "v2.0.0"
+            },
+            "v2.0.1": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v2.0.1.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v2.0.1/Checkpoint.cia",
+                "version": "v2.0.1"
+            },
+            "v2.0.2": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v2.0.2.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v2.0.2/Checkpoint.cia",
+                "version": "v2.0.2"
+            },
+            "v3.0.0": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v3.0.0.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v3.0.0/Checkpoint.cia",
+                "version": "v3.0.0"
+            },
+            "v3.1.0": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v3.1.0.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v3.1.0/Checkpoint.cia",
+                "version": "v3.1.0"
+            },
+            "v3.2.0": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v3.2.0.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v3.2.0/Checkpoint.cia",
+                "version": "v3.2.0"
+            },
+            "v3.3.0": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v3.3.0.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v3.3.0/Checkpoint.cia",
+                "version": "v3.3.0"
+            },
+            "v3.4.0": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v3.4.0.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v3.4.0/Checkpoint.cia",
+                "version": "v3.4.0"
+            },
+            "v3.4.1": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v3.4.1.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v3.4.1/Checkpoint.cia",
+                "version": "v3.4.1"
+            },
+            "v3.4.2": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v3.4.2.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v3.4.2/Checkpoint.cia",
+                "version": "v3.4.2"
+            },
+            "v3.5.0": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v3.5.0.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v3.5.0/Checkpoint.cia",
+                "version": "v3.5.0"
+            },
+            "v3.6.0": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v3.6.0.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v3.6.0/Checkpoint.cia",
+                "version": "v3.6.0"
+            },
+            "v3.7.0": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v3.7.0.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v3.7.0/Checkpoint.cia",
+                "version": "v3.7.0"
+            },
+            "v3.7.1": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v3.7.1.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v3.7.1/Checkpoint.cia",
+                "version": "v3.7.1"
+            },
+            "v3.7.2": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v3.7.2.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v3.7.2/Checkpoint.cia",
+                "version": "v3.7.2"
+            },
+            "v3.7.3": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v3.7.3.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v3.7.3/Checkpoint.cia",
+                "version": "v3.7.3"
+            },
+            "v3.7.4": {
+                "QR": "qrCodes/Checkpoint/Checkpoint-v3.7.4.png",
+                "URL": "https://github.com/FlagBrew/Checkpoint/releases/download/v3.7.4/Checkpoint.cia",
+                "version": "v3.7.4"
+            }
+        }
+    },
+    "Cthulhu": {
+        "description": "Homebrew alternative to Nintendo's dev unit software",
+        "latestQR": "qrCodes/Cthulhu/Cthulhu-1.3.4.png",
+        "latestURL": "https://github.com/Ryuzaki-MrL/Cthulhu/releases/download/1.3.4/Cthulhu.cia",
+        "latestVersion": "1.3.4",
+        "oldVersions": {
+            "1.2.0": {
+                "QR": "qrCodes/Cthulhu/Cthulhu-1.2.0.png",
+                "URL": "https://github.com/Ryuzaki-MrL/Cthulhu/releases/download/1.2.0/Cthulhu.cia",
+                "version": "1.2.0"
+            },
+            "1.3": {
+                "QR": "qrCodes/Cthulhu/Cthulhu-1.3.png",
+                "URL": "https://github.com/Ryuzaki-MrL/Cthulhu/releases/download/1.3/Cthulhu.cia",
+                "version": "1.3"
+            },
+            "1.3.1": {
+                "QR": "qrCodes/Cthulhu/Cthulhu-1.3.1.png",
+                "URL": "https://github.com/Ryuzaki-MrL/Cthulhu/releases/download/1.3.1/Cthulhu.cia",
+                "version": "1.3.1"
+            },
+            "1.3.2": {
+                "QR": "qrCodes/Cthulhu/Cthulhu-1.3.2.png",
+                "URL": "https://github.com/Ryuzaki-MrL/Cthulhu/releases/download/1.3.2/Cthulhu.cia",
+                "version": "1.3.2"
+            },
+            "1.3.3": {
+                "QR": "qrCodes/Cthulhu/Cthulhu-1.3.3.png",
+                "URL": "https://github.com/Ryuzaki-MrL/Cthulhu/releases/download/1.3.3/Cthulhu.cia",
+                "version": "1.3.3"
+            },
+            "1.3.4": {
+                "QR": "qrCodes/Cthulhu/Cthulhu-1.3.4.png",
+                "URL": "https://github.com/Ryuzaki-MrL/Cthulhu/releases/download/1.3.4/Cthulhu.cia",
+                "version": "1.3.4"
+            },
+            "v1.0": {
+                "QR": "qrCodes/Cthulhu/Cthulhu-v1.0.png",
+                "URL": "https://github.com/Ryuzaki-MrL/Cthulhu/releases/download/v1.0/Cthulhu.cia",
+                "version": "v1.0"
+            }
+        }
+    },
+    "FBI": {
+        "description": "Open source title manager for the 3DS.",
+        "latestQR": "qrCodes/FBI/FBI-2.6.0.png",
+        "latestURL": "https://github.com/Steveice10/FBI/releases/download/2.6.0/FBI.cia",
+        "latestVersion": "2.6.0",
+        "oldVersions": {
+            "2.4.10": {
+                "QR": "qrCodes/FBI/FBI-2.4.10.png",
+                "URL": "https://github.com/Steveice10/FBI/releases/download/2.4.10/FBI.cia",
+                "version": "2.4.10"
+            },
+            "2.4.11": {
+                "QR": "qrCodes/FBI/FBI-2.4.11.png",
+                "URL": "https://github.com/Steveice10/FBI/releases/download/2.4.11/FBI.cia",
+                "version": "2.4.11"
+            },
+            "2.4.12": {
+                "QR": "qrCodes/FBI/FBI-2.4.12.png",
+                "URL": "https://github.com/Steveice10/FBI/releases/download/2.4.12/FBI.cia",
+                "version": "2.4.12"
+            },
+            "2.4.13": {
+                "QR": "qrCodes/FBI/FBI-2.4.13.png",
+                "URL": "https://github.com/Steveice10/FBI/releases/download/2.4.13/FBI.cia",
+                "version": "2.4.13"
+            },
+            "2.4.14": {
+                "QR": "qrCodes/FBI/FBI-2.4.14.png",
+                "URL": "https://github.com/Steveice10/FBI/releases/download/2.4.14/FBI.cia",
+                "version": "2.4.14"
+            },
+            "2.4.5": {
+                "QR": "qrCodes/FBI/FBI-2.4.5.png",
+                "URL": "https://github.com/Steveice10/FBI/releases/download/2.4.5/FBI.cia",
+                "version": "2.4.5"
+            },
+            "2.4.6": {
+                "QR": "qrCodes/FBI/FBI-2.4.6.png",
+                "URL": "https://github.com/Steveice10/FBI/releases/download/2.4.6/FBI.cia",
+                "version": "2.4.6"
+            },
+            "2.4.7": {
+                "QR": "qrCodes/FBI/FBI-2.4.7.png",
+                "URL": "https://github.com/Steveice10/FBI/releases/download/2.4.7/FBI.cia",
+                "version": "2.4.7"
+            },
+            "2.4.8": {
+                "QR": "qrCodes/FBI/FBI-2.4.8.png",
+                "URL": "https://github.com/Steveice10/FBI/releases/download/2.4.8/FBI.cia",
+                "version": "2.4.8"
+            },
+            "2.4.9": {
+                "QR": "qrCodes/FBI/FBI-2.4.9.png",
+                "URL": "https://github.com/Steveice10/FBI/releases/download/2.4.9/FBI.cia",
+                "version": "2.4.9"
+            },
+            "2.5.0": {
+                "QR": "qrCodes/FBI/FBI-2.5.0.png",
+                "URL": "https://github.com/Steveice10/FBI/releases/download/2.5.0/FBI.cia",
+                "version": "2.5.0"
+            },
+            "2.5.1": {
+                "QR": "qrCodes/FBI/FBI-2.5.1.png",
+                "URL": "https://github.com/Steveice10/FBI/releases/download/2.5.1/FBI.cia",
+                "version": "2.5.1"
+            },
+            "2.5.2": {
+                "QR": "qrCodes/FBI/FBI-2.5.2.png",
+                "URL": "https://github.com/Steveice10/FBI/releases/download/2.5.2/FBI.cia",
+                "version": "2.5.2"
+            },
+            "2.5.3": {
+                "QR": "qrCodes/FBI/FBI-2.5.3.png",
+                "URL": "https://github.com/Steveice10/FBI/releases/download/2.5.3/FBI.cia",
+                "version": "2.5.3"
+            },
+            "2.6.0": {
+                "QR": "qrCodes/FBI/FBI-2.6.0.png",
+                "URL": "https://github.com/Steveice10/FBI/releases/download/2.6.0/FBI.cia",
+                "version": "2.6.0"
+            }
+        }
+    },
+    "ctrQuake": {
+        "description": "Port of quake for the Nintendo 3DS",
+        "latestQR": "qrCodes/ctrQuake/ctrQuake-v0.8.png",
+        "latestURL": "https://github.com/masterfeizz/ctrQuake/releases/download/v0.8/ctrQuake.cia",
+        "latestVersion": "v0.8",
+        "oldVersions": {
+            "v0.5": {
+                "QR": "qrCodes/ctrQuake/ctrQuake-v0.5.png",
+                "URL": "https://github.com/masterfeizz/ctrQuake/releases/download/v0.5/ctrQuake.cia",
+                "version": "v0.5"
+            },
+            "v0.5.1": {
+                "QR": "qrCodes/ctrQuake/ctrQuake-v0.5.1.png",
+                "URL": "https://github.com/masterfeizz/ctrQuake/releases/download/v0.5.1/ctrQuake.cia",
+                "version": "v0.5.1"
+            },
+            "v0.6": {
+                "QR": "qrCodes/ctrQuake/ctrQuake-v0.6.png",
+                "URL": "https://github.com/masterfeizz/ctrQuake/releases/download/v0.6/ctrQuake.cia",
+                "version": "v0.6"
+            },
+            "v0.7": {
+                "QR": "qrCodes/ctrQuake/ctrQuake-v0.7.png",
+                "URL": "https://github.com/masterfeizz/ctrQuake/releases/download/v0.7/ctrQuake.cia",
+                "version": "v0.7"
+            },
+            "v0.8": {
+                "QR": "qrCodes/ctrQuake/ctrQuake-v0.8.png",
+                "URL": "https://github.com/masterfeizz/ctrQuake/releases/download/v0.8/ctrQuake.cia",
+                "version": "v0.8"
+            }
+        }
+    },
+    "lumaupdate": {
+        "description": "Updater for Luma3DS",
+        "latestQR": "qrCodes/lumaupdate/lumaupdate-v2.5.png",
+        "latestURL": "https://github.com/KunoichiZ/lumaupdate/releases/download/v2.5/lumaupdater.cia",
+        "latestVersion": "v2.5",
+        "oldVersions": {
+            "v1.5": {
+                "QR": "qrCodes/lumaupdate/lumaupdate-v1.5.png",
+                "URL": "https://github.com/KunoichiZ/lumaupdate/releases/download/v1.5/lumaupdater.cia",
+                "version": "v1.5"
+            },
+            "v2.0": {
+                "QR": "qrCodes/lumaupdate/lumaupdate-v2.0.png",
+                "URL": "https://github.com/KunoichiZ/lumaupdate/releases/download/v2.0/lumaupdater.cia",
+                "version": "v2.0"
+            },
+            "v2.1": {
+                "QR": "qrCodes/lumaupdate/lumaupdate-v2.1.png",
+                "URL": "https://github.com/KunoichiZ/lumaupdate/releases/download/v2.1/lumaupdater.cia",
+                "version": "v2.1"
+            },
+            "v2.1.1": {
+                "QR": "qrCodes/lumaupdate/lumaupdate-v2.1.1.png",
+                "URL": "https://github.com/KunoichiZ/lumaupdate/releases/download/v2.1.1/lumaupdater.cia",
+                "version": "v2.1.1"
+            },
+            "v2.1.2": {
+                "QR": "qrCodes/lumaupdate/lumaupdate-v2.1.2.png",
+                "URL": "https://github.com/KunoichiZ/lumaupdate/releases/download/v2.1.2/lumaupdater.cia",
+                "version": "v2.1.2"
+            },
+            "v2.2": {
+                "QR": "qrCodes/lumaupdate/lumaupdate-v2.2.png",
+                "URL": "https://github.com/KunoichiZ/lumaupdate/releases/download/v2.2/lumaupdater.cia",
+                "version": "v2.2"
+            },
+            "v2.3": {
+                "QR": "qrCodes/lumaupdate/lumaupdate-v2.3.png",
+                "URL": "https://github.com/KunoichiZ/lumaupdate/releases/download/v2.3/lumaupdater.cia",
+                "version": "v2.3"
+            },
+            "v2.4": {
+                "QR": "qrCodes/lumaupdate/lumaupdate-v2.4.png",
+                "URL": "https://github.com/KunoichiZ/lumaupdate/releases/download/v2.4/lumaupdater.cia",
+                "version": "v2.4"
+            },
+            "v2.5": {
+                "QR": "qrCodes/lumaupdate/lumaupdate-v2.5.png",
+                "URL": "https://github.com/KunoichiZ/lumaupdate/releases/download/v2.5/lumaupdater.cia",
+                "version": "v2.5"
+            }
+        }
+    }
+}
