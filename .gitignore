@@ -2,3 +2,4 @@
 __pycache__/pDB_github.cpython-38.pyc
 config.json
 *.png
+.DS_Store
