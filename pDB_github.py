@@ -12,7 +12,7 @@ import io
 with open("config.json") as config_file:
     configData = json.load(config_file)
     
-githubTokenHeader = 'token {0}'.format(configData["githubAuthorizationToken"])
+githubTokenHeader = f'token {configData["githubAuthorizationToken"]}'
 
 githubAPILocation = "https://api.github.com"
 githubAPIVersionHeader = {'Accept': 'application/vnd.github.v3+json', 'Authorization': githubTokenHeader}
@@ -24,7 +24,7 @@ class GithubNotFoundError(Exception):
     pass
 
 def getProjectDescription(projectAuthor, projectName):
-    githubRequestURL = "{0}/repos/{1}/{2}".format(githubAPILocation, projectAuthor, projectName)
+    githubRequestURL = f"{githubAPILocation}/repos/{projectAuthor}/{projectName}"
     githubResponse = requests.get(githubRequestURL, headers=githubAPIVersionHeader) # get the data from Github
     
     if githubResponse.status_code == 200: # the request completed successfully
@@ -37,7 +37,7 @@ def getProjectDescription(projectAuthor, projectName):
         raise unknownGithubError("An unknown error occured while trying to obtain the project description.") # something went wrong, let the owner handle it
         
 def getLatestProjectCIA(projectAuthor, projectName):
-    githubRequestURL = "{0}/repos/{1}/{2}/releases/latest".format(githubAPILocation, projectAuthor, projectName)
+    githubRequestURL = f"{githubAPILocation}/repos/{projectAuthor}/{projectName}"
     githubResponse = requests.get(githubRequestURL, headers=githubAPIVersionHeader) # get the data from Github
     
     if githubResponse.status_code == 200: # the request completed successfully
@@ -56,14 +56,15 @@ def getLatestProjectCIA(projectAuthor, projectName):
         raise unknownGithubError("An unknown error occured while trying to obtain the latest CIA.") # something went wrong, let the owner handle it
 
 def getAllProjectCIAs(projectAuthor, projectName):
-    githubRequestURL = "{0}/repos/{1}/{2}/releases".format(githubAPILocation, projectAuthor, projectName)
+    githubRequestURL = f"{githubAPILocation}/repos/{projectAuthor}/{projectName}/releases"
     githubResponse = requests.get(githubRequestURL, headers=githubAPIVersionHeader) # get the data from Github
     
     if githubResponse.status_code == 200: # the request completed successfully
-        releases = []
-        releaseData = json.loads(githubResponse.content) # decode JSON data from Github
+        releases = list()
+        releaseData = json.loads(githubResponse.content)# decode JSON data from Github
+
         for release in releaseData: # iterate through all releases
-            releaseInfo = {} # initialise an empty dict for release info
+            releaseInfo = dict() # initialise an empty dict for release info
             
             releaseInfo["releaseTag"] = release["tag_name"]
             

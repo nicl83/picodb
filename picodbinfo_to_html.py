@@ -1,4 +1,4 @@
-import json, io
+import json
 
 htmlBasicPageTemplate = """
 <html>
@@ -34,13 +34,12 @@ def buildQRPageElement(qrCodeLocation, description, name):
 
 qrCodeElements = ""
 for source in picoDBInfo:
-    print("debug: processing source {0}".format(source))
+    print(f"debug: processing source {source}")
     currentSourceInfo = picoDBInfo[source]
     sourceQRElement = buildQRPageElement(currentSourceInfo["latestQR"], currentSourceInfo["description"], source)
     qrCodeElements += sourceQRElement
 
 document = htmlBasicPageTemplate.format(qrCodeElements)
-print(document)
 
-with io.open("picodb.html", 'w', encoding="utf8") as htmlFileOut:
+with open("picodb.html", 'w', encoding="utf8") as htmlFileOut:
     htmlFileOut.write(document)

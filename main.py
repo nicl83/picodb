@@ -1,88 +1,33 @@
-# PicoDB main file
-#
-# this will eventually be a CGI script, but for now, let's just work on getting it
-# to spit out valid HTML.
-#
-# early version, NJL 2020-JUN-14
-
-import qrcode 
-import requests
-import sys
+from importlib import reload
 import json
-import io
-import os
+import time
 
-import pDB_github
+with open("config.json") as config:
+    refreshtime = json.load(config)["refreshtime"]
 
-with open("config.json") as config_file:
-    configData = json.load(config_file)
-    
-with open("picodbInfo.json") as pdbInfoFile:
-    picoDBInfo = json.load(pdbInfoFile)
-    
-with open("sources.json") as sources_file:
-    sources = json.load(sources_file)
+print (f"========== Welcome to picoDB, set to fresh every {refreshtime} seconds! ==========")
 
-qrcodeSaveLocation = configData["qrcodeSaveLocation"]
 
-def genQRForCIA(version, url, name):
-    fileName = "{0}/{1}/{1}-{2}.png".format(qrcodeSaveLocation, name, version)
-    
-    if not os.path.exists("{0}/{1}".format(qrcodeSaveLocation, name)):
-        os.makedirs("{0}/{1}".format(qrcodeSaveLocation, name))
-    
-    if os.path.isfile(fileName):
-        print("QR code for {0}-{1} already exists at {2}, skipping".format(name, version, fileName))
-        return fileName
-    else:
-        CIAQR = qrcode.make(url)
-        CIAQR.save(fileName)
-        print("QR saved to {0}".format(fileName))
-        return fileName
+print ("===== Running sources to sources_to_picodbinfo =====\n")
+import sources_to_picodbinfo
 
-print("Generating picoDB information file, this may take some time")
-currentSourceID = -1 # bloody zero indexing
-for source in sources:
+print ("\n===== Now running picodbinfo_to_html =====\n")
+import picodbinfo_to_html
 
-    currentSourceID += 1 # increment it by one
-    currentSourceName = list(sources.keys())[currentSourceID] # please don't let me code tired again
-    print("Generating info for source {0}".format(currentSourceName))
-    picoDBInfo[currentSourceName] = {}
+print ("\n===== Refreshed HTMl, waiting! =====\n")
 
-    if sources[source]["type"] == "github":
-        currentSourceInfo = {}
-        currentSourceReleases = pDB_github.getAllProjectCIAs(sources[source]["developer"], sources[source]["repository"])
-        currentSourceDescription = pDB_github.getProjectDescription(sources[source]["developer"], sources[source]["repository"])
-        currentSourceLatestRelease = currentSourceReleases[0]
-        picoDBInfo[currentSourceName]["description"] = currentSourceDescription
-        picoDBInfo[currentSourceName]["latestVersion"] = currentSourceLatestRelease["releaseTag"]
-        picoDBInfo[currentSourceName]["latestURL"] = currentSourceLatestRelease["ciaURL"]
-        currentSourceLatestQR = genQRForCIA(currentSourceLatestRelease["releaseTag"], currentSourceLatestRelease["ciaURL"], sources[source]["repository"])
-        picoDBInfo[currentSourceName]["latestQR"] = currentSourceLatestQR
-        
-        oldVersions = {}
-        for version in currentSourceReleases:
-            currentVersion = version["releaseTag"]
-            currentVersionInfo = {}
-            currentVersionInfo["version"] = version["releaseTag"]
-            currentVersionInfo["URL"] = version["ciaURL"]
-            currentVersionQR = genQRForCIA(version["releaseTag"], version["ciaURL"], sources[source]["repository"])
-            currentVersionInfo["QR"] = currentVersionQR
-            oldVersions[currentVersion] = currentVersionInfo
-        
-        picoDBInfo[currentSourceName]["oldVersions"] = oldVersions #ugh, 6am code is the *worst*
-        
-    elif sources[source]["type"] == "other":
-        currentVersionQR = genQRForCIA(sources[source]["version"], sources[source]["location"], sources[source]["name"])
-        currentSourceInfo = {"latestVersion": sources[source]["version"],
-                             "description": sources[source]["description"],
-                             "latestURL": sources[source]["location"],
-                             "latestQR": currentVersionQR}
-        picoDBInfo[currentSourceName] = currentSourceInfo
-    
-with io.open("picodbInfo.json", 'w', encoding="utf8") as pdbInfoFileOut:
-    str_ = json.dumps(picoDBInfo,
-                      indent=4, sort_keys=True,
-                      separators=(',', ': '), ensure_ascii=False)
-    
-    pdbInfoFileOut.write(str_)
+time.sleep(refreshtime)
+
+while True:
+    print ("===== Running sources to sources_to_picodbinfo =====\n")
+    reload(sources_to_picodbinfo)
+
+    print ("\n===== Now running picodbinfo_to_html =====\n")
+    reload(picodbinfo_to_html)
+
+    print ("\n===== Refreshed HTMl, waiting! =====\n")
+
+    with open("config.json") as config:
+        refreshtime = json.load(config)["refreshtime"]
+
+    time.sleep(refreshtime)
