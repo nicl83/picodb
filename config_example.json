@@ -1,4 +1,5 @@
 {
     "githubAuthorizationToken": "token_goes_here",
-    "qrcodeSaveLocation": "qrCodes"
+    "qrcodeSaveLocation": "qrCodes",
+    "refreshtime": 3600
 }
