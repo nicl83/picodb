@@ -37,7 +37,7 @@ def getProjectDescription(projectAuthor, projectName):
         raise unknownGithubError("An unknown error occured while trying to obtain the project description.") # something went wrong, let the owner handle it
         
 def getLatestProjectCIA(projectAuthor, projectName):
-    githubRequestURL = f"{githubAPILocation}/repos/{projectAuthor}/{projectName}"
+    githubRequestURL = f"{githubAPILocation}/repos/{projectAuthor}/{projectName}/releases/latest"
     githubResponse = requests.get(githubRequestURL, headers=githubAPIVersionHeader) # get the data from Github
     
     if githubResponse.status_code == 200: # the request completed successfully
